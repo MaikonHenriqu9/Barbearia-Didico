@@ -1,0 +1,308 @@
+@font-face{
+    font-family: 'Sancreek';
+    src: url(./../fonte/Sancreek-Regular.ttf);
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* APLICAÇÃO DA FONTE PARA AS TAGS DE TÍTULOS*/
+h1, h2, h3{
+    font-family: 'Sancreek';
+    letter-spacing: 5px;
+}
+
+h1{
+    font-size: 4.3vh;
+}
+
+p{
+    font-size: 3.55vh;
+}
+
+body{
+    background-image: url(./../assets/background/background-main.webp);
+    background-size: 30%;
+    background-repeat:repeat;
+    background-attachment: fixed;
+}
+
+header{
+    width: 100%;
+    height: 9.5vh;
+    background-color: #1A2034;
+}
+
+
+.tela-inicial{
+    width: 100%;
+    height: 74.24vh;
+    margin-bottom: 50px;
+    background-image: url(./../assets/background/backgorund-main.png);
+    background-size: 100% auto;
+    background-position-y: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.botao-agendar{
+    font-family: Sancreek;
+    width: 287px;
+    height: 64px;
+    background-color: #761212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 32px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.botao-agendar:hover{
+    background-color: #530E0E;
+    box-shadow: 4px 4px 1px  rgb(108, 108, 108);
+}
+
+/* Seção Sobre Nós */
+.sobre-nos{
+    width: 100%;
+    height: 66.30vh;
+    background-color: #1A2034;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.caixa{
+    width: 50%;
+    height: auto;
+}
+
+#descricaoSobreNos{
+    width: 100%;
+    padding: 3.5vh;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#foto-barbearia{
+    background-image: url(./../assets/background/image\ 5.png);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Seção sobre os cortes de cabelo*/
+.secao-cortes{
+    height: 96vh;
+    background-color: #1A2034;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.video-cortes{
+    width: 40%;
+    height: 96vh;
+    background-image: url(./../assets/background/background-barber.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-cortes video{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-cortes{
+    width: 60%;
+    height: 96vh;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Seção dos serviços*/
+.servicos{
+    background-image: url(./../assets/background/background-service.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+.precos{
+    background-color: #1A2034;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.itens{
+    background-color: red;
+    width: 30%;
+    height: 400px;
+}
+
+
+/*Seção de contatos*/
+.contato{
+    width: 100%;
+    height: 89.30vh;
+    background-color: #1A2034;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.formatacao{
+    width: 50%;
+}
+
+/*ESTILIZAÇÃO DA LOCALIZAÇÃO*/
+#localizacao{
+    background-image: url(./../assets/background/image\ 10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#localizacao h1{
+    margin-bottom: 20px;
+}
+
+#localizacao iframe{
+    width: 90%;
+    height: 80%;
+}
+
+/*ESTILIZAÇÃO DOS CONTATOS*/
+#contatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*FOOTER*/
+.rodape{
+    height: 40vh;
+    background-color: #1A2034;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.informacoes{
+    margin-top: 45px;
+}
+
+.informacoes li {
+    list-style: none;
+}
+
+.logo img{
+    width: 200px;
+    margin: 20px 30px;
+}
+
+
+/* Responsividade */
+
+/* Mobile */
+@media(min-width: 320px) and (max-width: 480px){
+    .tela-inicial{
+        height: 36vh;
+    }
+
+    .sobre-nos{
+        height: 42.89vh;
+    }
+
+    .secao-cortes{}
+
+    .contato{ }
+
+
+}
+
+/* Extra small device */
+@media (min-width: 481px) and (max-width: 767px){
+    .tela-inicial{}
+
+    .sobre-nos{}
+
+    .secao-cortes{}
+
+    .contato{}
+
+}
+
+/* Small Tablets */
+@media (min-width: 768px) and (max-width: 991px){
+    .tela-inicial{}
+
+    .sobre-nos{}
+
+    .secao-cortes{}
+
+    .contato{}
+}
+
+/* Large tablets */
+@media (min-width: 992px) and (max-width:1199){
+    .tela-inicial{}
+
+    .sobre-nos{}
+
+    .secao-cortes{}
+
+    .contato{}
+}
+
+/* Desktops */
+@media (min-width:1200px) and (max-width: 1919px){
+    .tela-inicial{}
+
+    .sobre-nos{}
+
+    .secao-cortes{}
+
+    .contato{}
+
+}
+
+/* FOOTER */
+@media (min-width: 320px) and (max-width: 767px){
+    .rodape{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+}
