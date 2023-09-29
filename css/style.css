@@ -311,7 +311,7 @@ nav{
     align-items: center;
     justify-content: center;
     font-family: Sancreek;
-    font-size: 70px;
+    font-size: 9vh;
     
 }
 
@@ -425,14 +425,56 @@ nav{
         height: 36vh;
     }
 
-    .sobre-nos {
-        height: 42.89vh;
+    .botao-agendar {
+        width: 30%;
+        height: 20px;
     }
 
-    .secao-cortes {}
+    .sobre-nos {
+        height: 85vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-    .contato {}
+    #foto-barbearia{
+        display: none;
+    }
 
+    .secao-cortes {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video-cortes{
+        width: 100%;
+    }
+
+    .foto-cortes{
+        width: 100%;
+        height: 100%;
+    }
+
+    .servicos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .precos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #localizacao{
+        width: 100%;
+        height: 50%;
+    }
 
 }
 
