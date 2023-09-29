@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
     font-family: 'Sancreek';
     src: url(./../fonte/Sancreek-Regular.ttf);
 }
@@ -13,34 +13,75 @@
 }
 
 /* APLICAÇÃO DA FONTE PARA AS TAGS DE TÍTULOS*/
-h1, h2, h3{
+h1,
+h2 {
     font-family: 'Sancreek';
     letter-spacing: 5px;
 }
 
-h1{
+h1 {
     font-size: 4.3vh;
 }
 
-p{
+p {
     font-size: 3.55vh;
 }
 
-body{
+a{
+    font-family: Sancreek;;
+    text-decoration: none;
+}
+
+body {
     background-image: url(./../assets/background/background-main.webp);
     background-size: 30%;
-    background-repeat:repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
 }
 
-header{
+/*Configuração da navbar*/
+nav{
     width: 100%;
     height: 9.5vh;
     background-color: #1A2034;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
-.tela-inicial{
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    font-size: 3.24vh;
+    margin-left: 32px;
+}
+
+.nav-list a:hover{
+    box-shadow: 0px 6px 0px rgb(125, 33, 33);
+}
+
+
+/* MENU HAMBURGUER */
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px;
+}
+
+
+/* Tela Inicial */
+.tela-inicial {
     width: 100%;
     height: 74.24vh;
     margin-bottom: 50px;
@@ -52,7 +93,7 @@ header{
     align-items: flex-end;
 }
 
-.botao-agendar{
+.botao-agendar {
     font-family: Sancreek;
     width: 287px;
     height: 64px;
@@ -66,13 +107,13 @@ header{
     border-radius: 10px;
 }
 
-.botao-agendar:hover{
+.botao-agendar:hover {
     background-color: #530E0E;
-    box-shadow: 4px 4px 1px  rgb(108, 108, 108);
+    box-shadow: 4px 4px 1px rgb(108, 108, 108);
 }
 
 /* Seção Sobre Nós */
-.sobre-nos{
+.sobre-nos {
     width: 100%;
     height: 66.30vh;
     background-color: #1A2034;
@@ -81,24 +122,27 @@ header{
     flex-direction: row;
 }
 
-.caixa{
+.caixa {
     width: 50%;
     height: auto;
 }
 
-#descricaoSobreNos{
+#descricaoSobreNos {
     width: 100%;
     padding: 3.5vh;
-  
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+}
+
+#descricaoSobreNos h1 {
+    margin-bottom: 20px;
 }
 
 
-
-#foto-barbearia{
+#foto-barbearia {
     background-image: url(./../assets/background/image\ 5.png);
     width: 100%;
     height: auto;
@@ -107,7 +151,7 @@ header{
 }
 
 /*Seção sobre os cortes de cabelo*/
-.secao-cortes{
+.secao-cortes {
     height: 96vh;
     background-color: #1A2034;
     margin-bottom: 50px;
@@ -115,31 +159,132 @@ header{
     flex-direction: row;
 }
 
-.video-cortes{
+.video-cortes {
     width: 40%;
     height: 96vh;
     background-image: url(./../assets/background/background-barber.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.video-cortes video{
-    width: 100%;
-    height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
-.foto-cortes{
+.video-cortes img {
+    width: 80%;
+    height: 90%;
+    display: flex;
+
+}
+
+.foto-cortes {
     width: 60%;
     height: 96vh;
     text-align: center;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-cortes h1{
+    margin-bottom: 10px;
+}
+
+
+.angry-grid {
+    display: grid;
+    
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 10px;
+    width: 90%;
+    height: 70%;
+
+}
+
+#item-0 {
+
+    background-image: url(./../assets/cortes/corte-1.webp);
+    background-size: cover;
+    background-position: center;
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+    grid-row-end: 2;
+    grid-column-end: 2;
+
+}
+
+#item-1 {
+
+    background-image: url(./../assets/cortes/corte-3.webp);
+    background-size: cover;
+    background-position: center;
+    grid-row-start: 1;
+    grid-column-start: 2;
+
+    grid-row-end: 2;
+    grid-column-end: 3;
+
+}
+
+#item-2 {
+
+    background-image: url(./../assets/cortes/corte-1.png);
+    background-size: cover;
+    background-position: center;
+    grid-row-start: 1;
+    grid-column-start: 3;
+
+    grid-row-end: 2;
+    grid-column-end: 4;
+
+}
+
+#item-3 {
+
+    background-image: url(./../assets/cortes/corte-2.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-row-start: 2;
+    grid-column-start: 3;
+
+    grid-row-end: 3;
+    grid-column-end: 4;
+
+}
+
+#item-4 {
+
+    background-image: url(./../assets/cortes/corte-10.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-row-start: 2;
+    grid-column-start: 2;
+
+    grid-row-end: 3;
+    grid-column-end: 3;
+
+}
+
+#item-5 {
+    background-image: url(./../assets/cortes/corte-2.webp);
+    background-size: cover;
+    background-position: center;
+    grid-row-start: 2;
+    grid-column-start: 1;
+
+    grid-row-end: 3;
+    grid-column-end: 2;
+
 }
 
 /*Seção dos serviços*/
-.servicos{
+.servicos {
     background-image: url(./../assets/background/background-service.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -149,8 +294,7 @@ header{
     padding: 20px;
 }
 
-.precos{
-    background-color: #1A2034;
+.precos {
     width: 100%;
     height: 90%;
     display: flex;
@@ -158,15 +302,40 @@ header{
     align-items: center;
 }
 
-.itens{
+.itens {
     background-color: red;
     width: 30%;
-    height: 400px;
+    height: 500px;
+    filter: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Sancreek;
+    font-size: 70px;
+    
+}
+
+#barba{
+    background-image: url(./../assets/cortes/barba-1.jpg);
+    background-size: cover;
+    background-position:top;
+}
+
+#cabelo{
+    background-image: url(./../assets/cortes/corte-25.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#sobrancelha{
+    background-image: url(./../assets/cortes/sobrancelha.jpg);
+    background-size: cover;
+    background-position:top;
 }
 
 
 /*Seção de contatos*/
-.contato{
+.contato {
     width: 100%;
     height: 89.30vh;
     background-color: #1A2034;
@@ -175,12 +344,12 @@ header{
     flex-direction: row;
 }
 
-.formatacao{
+.formatacao {
     width: 50%;
 }
 
 /*ESTILIZAÇÃO DA LOCALIZAÇÃO*/
-#localizacao{
+#localizacao {
     background-image: url(./../assets/background/image\ 10.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -192,24 +361,41 @@ header{
     align-items: center;
 }
 
-#localizacao h1{
+#localizacao h1 {
     margin-bottom: 20px;
 }
 
-#localizacao iframe{
+#localizacao iframe {
     width: 90%;
     height: 80%;
 }
 
 /*ESTILIZAÇÃO DOS CONTATOS*/
-#contatos{
+#contatos {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3vh;
+}
+
+#contatos h2{
+    font-size: 4vh;
+}
+
+.redes_sociais{
+    width: 100%;
+    margin: 100px auto;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+.redes_sociais img{
+    width: 50%;
+}
+
 /*FOOTER*/
-.rodape{
+.rodape {
     height: 40vh;
     background-color: #1A2034;
     display: flex;
@@ -217,7 +403,7 @@ header{
     align-items: flex-start;
 }
 
-.informacoes{
+.informacoes {
     margin-top: 45px;
 }
 
@@ -225,7 +411,7 @@ header{
     list-style: none;
 }
 
-.logo img{
+.logo img {
     width: 200px;
     margin: 20px 30px;
 }
@@ -234,71 +420,106 @@ header{
 /* Responsividade */
 
 /* Mobile */
-@media(min-width: 320px) and (max-width: 480px){
-    .tela-inicial{
+@media(min-width: 320px) and (max-width: 480px) {
+    .tela-inicial {
         height: 36vh;
     }
 
-    .sobre-nos{
+    .sobre-nos {
         height: 42.89vh;
     }
 
-    .secao-cortes{}
+    .secao-cortes {}
 
-    .contato{ }
+    .contato {}
 
 
 }
 
 /* Extra small device */
-@media (min-width: 481px) and (max-width: 767px){
-    .tela-inicial{}
+@media (min-width: 481px) and (max-width: 767px) {
+    .tela-inicial {}
 
-    .sobre-nos{}
+    .sobre-nos {}
 
-    .secao-cortes{}
+    .secao-cortes {}
 
-    .contato{}
+    .contato {}
 
 }
 
 /* Small Tablets */
-@media (min-width: 768px) and (max-width: 991px){
-    .tela-inicial{}
+@media (min-width: 768px) and (max-width: 991px) {
+    .tela-inicial {}
 
-    .sobre-nos{}
+    .sobre-nos {}
 
-    .secao-cortes{}
+    .secao-cortes {}
 
-    .contato{}
+    .contato {}
 }
 
 /* Large tablets */
-@media (min-width: 992px) and (max-width:1199){
-    .tela-inicial{}
+@media (min-width: 992px) and (max-width:1199) {
+    .tela-inicial {}
 
-    .sobre-nos{}
+    .sobre-nos {}
 
-    .secao-cortes{}
+    .secao-cortes {}
 
-    .contato{}
+    .contato {}
 }
 
 /* Desktops */
-@media (min-width:1200px) and (max-width: 1919px){
-    .tela-inicial{}
+@media (min-width:1200px) and (max-width: 1919px) {
+    .tela-inicial {}
 
-    .sobre-nos{}
+    .sobre-nos {}
 
-    .secao-cortes{}
+    .secao-cortes {}
 
-    .contato{}
+    .contato {}
 
 }
 
+
+/* MENU HAMBURGUER RESPONSIVO */
+@media (max-width: 999px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vw;
+        background-color: #1A2034;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li{
+        margin-left: 0;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .nav-list.active{
+        transform: translateX(0);
+    }
+}
+
 /* FOOTER */
-@media (min-width: 320px) and (max-width: 767px){
-    .rodape{
+@media (min-width: 320px) and (max-width: 767px) {
+    .rodape {
         height: auto;
         display: flex;
         flex-direction: column;

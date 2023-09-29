@@ -12,16 +12,37 @@
 <body>
     <main>
         <header>
+            <nav>
+                <a href="/" class="logo">
+                    <img src="assets/logo.png" alt="">
+                </a>
 
+                <!-- MENU HAMBURGUER -->
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+                <ul class="nav-list">
+                    <li><a href="#sobre_nos">SOBRE NÓS</a></li>
+                    <li><a href="#cortes">CORTES</a></li>
+                    <li><a href="#servico">SERVIÇOS</a></li>
+                    <li><a href="#contato">CONTATOS</a></li>
+                </ul>
+            </nav>
         </header>
+
+
+
 
         <!-- TELA INICIAL -->
         <section class="tela-inicial">
-            <a href="http://wa.me/5511997805023" class="botao-agendar">AGENDAR HORÁRIO</a>
+            <a href="http://wa.me/5511997805023" alt="" class="botao-agendar" target="_blank">AGENDAR HORÁRIO</a>
         </section>
 
         <!-- Seção sobre a barbearia-->
-        <section class="sobre-nos" name="sobre_nos">
+        <section class="sobre-nos" id="sobre_nos">
             <div class="caixa" id="descricaoSobreNos">
                 <h1>SOBRE NÓS</h1>
 
@@ -37,30 +58,39 @@
         </section>
 
         <!-- Seçaõ sobre os cortes -->
-        <section class="secao-cortes" name="cortes">
+        <section class="secao-cortes" id="cortes">
             <div class="video-cortes">
-                <video autoplay loop><!--o controls seria o controle de pause etc-->
-                    <source src="assets/videos/video-1.mp4" type="video/mp4">
-                </video>
+                <img src="assets/videos/gif-corte.gif" type="image/gif" alt="">
 
             </div>
+
+            <!-- Seçao dos cortes -->
             <div class="foto-cortes">
                 <h1>CORTES</h1>
+
+                <div class="angry-grid">
+                    <div id="item-0">&nbsp;</div>
+                    <div id="item-1">&nbsp;</div>
+                    <div id="item-2">&nbsp;</div>
+                    <div id="item-3">&nbsp;</div>
+                    <div id="item-4">&nbsp;</div>
+                    <div id="item-5">&nbsp;</div>
+                  </div>
             </div>
         </section>
 
-        <section class="servicos" name="servicos">
+        <section class="servicos" id="servico">
             <h2>SERVIÇOS</h2>
 
             <div class="precos">
-                <div class="itens"></div>
-                <div class="itens"></div>
-                <div class="itens"></div>
+                <div class="itens" id="barba"> BARBA <br> R$25,00</div>
+                <div class="itens" id="cabelo"> CABELO <br> R$30,00</div>
+                <div class="itens" id="sobrancelha">SOBRANCELHA <br> R$10,00</div>
             </div>
 
         </section>
 
-        <section class="contato" name="contato">
+        <section class="contato" id="contato">
             <div class="formatacao" id="localizacao">
                 <h1>Localização</h1>
                 <iframe
@@ -70,8 +100,13 @@
             </div>
             <div class="formatacao" id="contatos">
                 <h1>CONTATOS</h1>
+                <h3>CELULAR: +55 11 99780-5023</h3>
+                <h3>INSTAGRAM: didicobarberr</h3>
 
-                
+                <div class="redes_sociais">
+                    <a href="http://wa.me/5511997805023" target="_blank"><img src="assets/icons/icon-wpp.png" alt=""></a>
+                    <a href="https://www.instagram.com/didicobarberr/" target="_blank"><img src="assets/icons/new-Instagram-logo-white-glyph.png" alt=""></a>
+                </div>
             </div>
         </section>
     </main>
@@ -92,9 +127,11 @@
             <li>SÁBADO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9H-20H</li>
             <li>DOMINGO &nbsp;&nbsp;&nbsp;FECHADO</li>
         </div>
+
+        
     </footer>
 
-
+    <script src="js/mobile-navbar.js"></script>
 </body>
 
 </html>
