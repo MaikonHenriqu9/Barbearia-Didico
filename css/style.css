@@ -434,15 +434,24 @@ nav{
 /* Mobile */
 @media(min-width: 320px) and (max-width: 480px) {
     .tela-inicial {
-        height: 36vh;
+        width: 100%;
+        height: 30vh;
+        background-repeat: no-repeat;
     }
 
-   
+    .botao-agendar {
+        padding: 5px 10px;
+        font-size: 3vh;
+    }
 
     .sobre-nos {
-        height: 85vh;
+        height: 86vh;
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .sobre-nos p {
+        height: 100%;
     }
 
     #foto-barbearia{
