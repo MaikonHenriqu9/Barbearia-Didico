@@ -446,13 +446,14 @@ nav{
     }
 
     .sobre-nos {
-        height: 60vh;
+        height: auto;
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 20px;
     }
 
     .sobre-nos p {
+        height: 100%;
         font-size: 3.4vh;
     }
 
